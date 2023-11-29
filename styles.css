@@ -1,0 +1,222 @@
+header {
+    background-size: cover;
+    background-position: center;
+    color: #464646;
+    font-size: 35px;
+    text-align: center;
+    padding: 11px;
+    margin: 11px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 5px 5px 10px rgba(54, 54, 54, 0.8); 
+  }
+  
+  header h1 {
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.ui-element {
+    margin-bottom: 80px; 
+}
+
+  .navbar {
+    background-color: #3d3d3d;
+    padding: 20px;
+    margin: 0;
+    border-radius: 5%;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    margin-bottom: 30px;
+  }
+
+
+  #draggable {
+    box-sizing: border-box;
+    border: 1px solid #000; 
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 20%;
+  }
+
+  #droppable {
+    box-sizing: border-box;
+    border: 1px solid #000; 
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+  }
+
+  #resizable { 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+    background:aqua;
+    border-radius: 10%;
+  } 
+
+    #resizable h3 { 
+        text-align: center; 
+        margin: 0; 
+}
+
+
+    #feedback { 
+        font-size: 1.4em; 
+    }
+
+    #selectable .ui-selecting { 
+        background: #6ffe40; 
+    }
+
+    #selectable .ui-selected { 
+        background: #6ffe40; 
+        color: white; 
+    }
+    
+    #selectable { 
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0; 
+        width: 60%; 
+    }
+
+    #selectable li { 
+        margin: 3px; 
+        padding: 0.4em; 
+        font-size: 1.4em; 
+        height: 18px; 
+        list-style-type: none; 
+    }
+
+    .accordion-container {
+        width: 200px; 
+        margin: auto; 
+        border-radius: 20%;
+        
+    }
+    
+    #accordion h3 {
+        font-size: 12px; 
+        padding: 8px; 
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    #accordion div {
+        font-size: 10px; 
+        padding: 8px; 
+    }
+
+    .ui-widget {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    #slider {
+        background:#6ffe40;
+    }
+
+    .toggler { 
+        width: 500px; 
+        height: 200px; 
+    }
+
+    #button {
+        padding: 0.5em 1em;
+        text-decoration: none;
+        display: block;
+        margin: 50px auto; 
+        background-color: #6ffe40;
+    }
+    
+
+    #effect {
+        width: 240px;
+        height: 170px;
+        padding: 0.4em;
+        position: relative;
+        background: #fff; 
+        margin-bottom: 20px;
+    }
+    
+    #effect h3 {
+        margin: 0;
+        padding: 0.4em;
+        text-align: center;
+        background: #6ffe40; 
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        header {
+            font-size: 21px;
+        }
+    
+        .container {
+            padding: 12px;
+        }
+    
+        .ui-element {
+            margin-bottom: 42px;
+        }
+    
+        .navbar {
+            padding: 15px;
+        }
+    
+        #draggable {
+            width: 85px;
+            height: 85px;
+        }
+    
+        #droppable {
+            width: 155px;
+            height: 155px;
+        }
+    
+        #resizable {
+            width: 120px;
+            height: 120px;
+        }
+    
+        #selectable {
+            width: 100%;
+        }
+    
+        .accordion-container {
+            width: 100%;
+        }
+    
+        #accordion h3 {
+            font-size: 15px;
+        }
+    
+        #accordion div {
+            font-size: 14px;
+        }
+    
+        .ui-widget {
+            margin-top: 10px;
+        }
+    }
+
+    
